@@ -47,12 +47,12 @@ export default function Contact() {
             <div className="flex z-10 flex-col gap-4 mb-8 w-full max-w-2xl md:mb-0">
 
                 <div className="flex flex-col gap-4 md:flex-row">
-                    <motion.a href="tel:513 691 445"
+                    <motion.a href="tel:737 323 900"
                         className="flex flex-col flex-1 justify-center items-center p-4 font-medium text-gray-700 rounded-xl shadow-md transition bg-white/70 backdrop-blur-lg"
                         whileTap={{ scale: .95 }}
                     >
                         <PhoneIcon className="mb-2 w-8 h-8 drop-shadow-md" />
-                        <p>513 691 445</p>
+                        <p>737 323 900</p>
                     </motion.a>
 
                     <motion.a href="mailto:kontakt@serwin.digital"
