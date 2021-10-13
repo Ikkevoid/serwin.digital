@@ -20,12 +20,12 @@ export default function Contact() {
             },
             body: JSON.stringify({
                 apikey: "7f1126ee-40cc-4fb4-a128-b7c49b7a0388",
-                subject: "Serwin.digital - nowa wiadomość",
-                "Imię": e.target.name.value,
+                subject: "Serwin.digital - usługi WWW",
+                imię: e.target.name.value,
                 from_name: e.target.name.value,
-                "Email": e.target.email.value,
-                "Telefon": e.target.phone.value,
-                "Wiadomość": e.target.message.value,
+                email: e.target.email.value,
+                telefon: e.target.phone.value,
+                wiadomość: e.target.message.value,
             }),
         })
         const result = await response.json()
@@ -47,12 +47,12 @@ export default function Contact() {
             <div className="flex z-10 flex-col gap-4 mb-8 w-full max-w-2xl md:mb-0">
 
                 <div className="flex flex-col gap-4 md:flex-row">
-                    <motion.a href="tel:737 323 900"
+                    <motion.a href="tel:513 691 445"
                         className="flex flex-col flex-1 justify-center items-center p-4 font-medium text-gray-700 rounded-xl shadow-md transition bg-white/70 backdrop-blur-lg"
                         whileTap={{ scale: .95 }}
                     >
                         <PhoneIcon className="mb-2 w-8 h-8 drop-shadow-md" />
-                        <p>737 323 900</p>
+                        <p>513 691 445</p>
                     </motion.a>
 
                     <motion.a href="mailto:kontakt@serwin.digital"
@@ -68,7 +68,7 @@ export default function Contact() {
 
                     <input type="checkbox" name="botcheck" className="hidden" />
 
-                    <label htmlFor="formName" className="text-gray-600">Imię i nazwisko</label>
+                    <label htmlFor="formName" className="text-gray-600">Imię</label>
                     <div className={inputBoxStyle}>
                         <div className={inputIconBoxStyle}>
                             <UserCircleIcon className="w-6 h-6 fill-current" />
